@@ -8,7 +8,7 @@ const HeroPage = () => {
                   <h1 className="text-white text-7xl font-extrabold mb-6">BEST QUALITY PASTA</h1>
                   <p className="text-white text-lg mb-6 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias provident laborum, recusandae delectus corrupti reprehenderit error distinctio eligendi qui consequuntur officia.
                   </p>
-                  <button className="bg-[#FFCC33] w-[200px] py-3 rounded-md font-bold text-black">BOOK A TABLE</button>
+                  <button className="bg-[#FFCC33] w-[200px] py-3 rounded-md font-black text-lg text-black">BOOK A TABLE</button>
               </div>
           </div>
       </Element>
