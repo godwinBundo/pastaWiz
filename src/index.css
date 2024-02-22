@@ -10,5 +10,8 @@
 .bg-covers{
   background-image: url(/bg-header.png);
 }
+.bg-double{
+  background-image: url(/bg-offer.png);
+}
 
 
