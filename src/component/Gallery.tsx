@@ -6,7 +6,9 @@ import gallery3 from "../assets/gallery-2.jpeg"
 import gallery4 from "../assets/gallery-6.jpeg"
 import gallery5 from "../assets/gallery-1.jpeg"
 import {Element} from "react-scroll"
+
 const Gallery = () => {
+  const galleryImage = [gallery, gallery1, gallery2, gallery3, gallery4, gallery5]
   return (
     <Element name="gallery" className=" bg-black text-white py-24">
         <div className="flex items-center justify-center gap-x-2" >
@@ -14,12 +16,12 @@ const Gallery = () => {
             <h1 className="text-5xl font-extrabold">GALLERY</h1>
         </div>
         <div className="mt-10 grid grid-cols-3 px-40">
-            <img src={gallery} className="hover:opacity-60 transition-opacity duration-300 ease-in h-full w-full" alt="" />
-            <img src={gallery1} className="hover:opacity-60 transition-opacity duration-300 ease-in" alt="" />
-            <img src={gallery2} className="hover:opacity-60 transition-opacity duration-300 ease-in" alt="" />
-            <img src={gallery3} className="hover:opacity-60 transition-opacity duration-300 ease-in" alt="" />
-            <img src={gallery4} className="hover:opacity-60 transition-opacity duration-300 ease-in" alt="" />
-            <img src={gallery5} className="hover:opacity-60 transition-opacity duration-300 ease-in" alt="" />
+          {galleryImage.map((item, index)=>(
+            <div  key={index}>
+              <img className="hover:opacity-60 transition-opacity duration-300 ease-in" src={item} />
+            </div>
+          ))}
+            
         </div>
     </Element>
   )

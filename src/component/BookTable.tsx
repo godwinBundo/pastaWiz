@@ -2,7 +2,7 @@ import leaf from "../assets/bg-title.png"
 
 const BookTable = () => {
   return (
-    <div className="bg-zinc-900 text-white py-24 px-40">
+    <div className="bg-pattern bg-cover bg-no-repeat text-white py-24 px-40">
         <div className="flex items-center justify-center gap-x-2" >
             <img src={leaf} />
             <h1 className="text-5xl font-extrabold">BOOK A TABLE</h1>
