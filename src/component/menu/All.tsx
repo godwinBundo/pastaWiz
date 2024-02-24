@@ -59,10 +59,10 @@ const All = () => {
         },
     ]
   return (
-    <div className="grid grid-cols-4 gap-x-5 text-center gap-y-10 transition-all duration-500 ease-in-out">
+    <div className=" tablet:flex tablet:flex-col  grid grid-cols-4 gap-x-5 text-center gap-y-10 transition-all duration-500 ease-in-out">
         {food.map((item, index)=>(
             <div className=" " key={index}>
-                <img className="hover:opacity-60 transition-opacity duration-500 ease-in-out" src={item.image} alt="" />
+                <img className="hover:opacity-60 transition-opacity duration-500 ease-in-out tablet:w-[100%]" src={item.image} alt="" />
                 <h2 className=" font-extrabold text-lg mt-5">{item.title}</h2>
                 <p className="mx-auto my-5 font-serif italic text-lg">{item.text}</p>
                 <h2 className=" font-extrabold text-lg text-[#FFCC33]">N{item.price}</h2>

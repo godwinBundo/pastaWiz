@@ -31,8 +31,8 @@ const Header = () =>{
     window.addEventListener("scroll", changebackground)
     window.addEventListener("scroll", changeArrow)
   return (
-    <div className={`${navbar ? "bg-black" :"bg-transparent" }  transition-all duration-200 ease-in fixed w-full z-10 text-white`}>
-        <div className="flex items-center justify-between h-[90px] px-40 sm:px-2 md:px-4 lg:px-20 ">
+    <div className={`${navbar ? "bg-black" :"bg-transparent" }  transition-all duration-200 ease-in fixed w-full mobile:w-screen mobile:px-2  z-10 text-white  `}>
+        <div className="flex items-center justify-between h-[90px] px-40 mobile:px-0 tablet:px-2  ">
         <img src={logo} alt="" />
         <nav className="">
             <ul className="flex items-center mobile:hidden tablet:hidden text-xl font-bold space-x-10 ">
@@ -74,8 +74,8 @@ const Header = () =>{
             <MdMenu/>
             
         </div>
-        <nav className={`fixed bg-black h-screen top-0 left-0 sm:w-10/12 md:w-8/12 px-10 pt-5 transition-all duration-700 ease-in-out ${showMenu ? 'right-60': 'left-[-100vw]'}`}>
-            <div className=" flex justify-end text-5xl font-bold hover:text-[#FFCC33] transition-all duration-300 ease-in" onClick={handleMenu}>
+        <nav className={`fixed bg-black h-[400px] top-0 left-0 mobile:w-[200px] md:w-8/12 px-10 pt-5 transition-all duration-700 ease-in-out ${showMenu ? 'right-60': 'left-[-100vw]'}`}>
+            <div className=" flex justify-end text-5xl mobile:flex mobile:justify-center font-bold hover:text-[#FFCC33] transition-all duration-300 ease-in" onClick={handleMenu}>
                 <MdClose/>
             </div>
             <ul className="  flex flex-col  text-xl font-bold space-y-5 pt-5 ">
@@ -115,7 +115,7 @@ const Header = () =>{
         
        
         </div>
-        <button className={`text-black bg-[#ffcc33] p-3 rounded-lg absolute right-20 top-[600px] text-2xl font-extrabold ${arrow ? "block" : "hidden"}`} onClick={scrollToTop}>
+        <button className={`text-black bg-[#ffcc33] p-3 rounded-lg absolute right-20 top-[600px] text-2xl mobile:hidden font-extrabold ${arrow ? "block" : "hidden"}`} onClick={scrollToTop}>
           <MdArrowUpward/>
         </button>
     </div>
