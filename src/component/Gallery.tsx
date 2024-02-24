@@ -13,9 +13,9 @@ const Gallery = () => {
     <Element name="gallery" className=" bg-black text-white py-24">
         <div className="flex items-center justify-center gap-x-2" >
             <img src={leaf} />
-            <h1 className="text-5xl font-extrabold">GALLERY</h1>
+            <h1 className="text-5xl font-extrabold tablet:text-3xl">GALLERY</h1>
         </div>
-        <div className="mt-10 grid grid-cols-3 px-40">
+        <div className="mt-10 grid grid-cols-3 px-40 tablet:px-2 tablet:flex-col tablet:flex">
           {galleryImage.map((item, index)=>(
             <div  key={index}>
               <img className="hover:opacity-60 transition-opacity duration-300 ease-in" src={item} />

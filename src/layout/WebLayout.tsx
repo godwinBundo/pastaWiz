@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom"
 
 const WebLayout = () => {
   return (
-    <div>
+    <div className=" radio:z-10 radio:overflow-hidden tablet:overflow-hidden tablet:z-10">
         <Header/>
         <Outlet/>
         <Footer/>
