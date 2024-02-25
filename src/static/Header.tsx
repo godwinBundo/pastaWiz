@@ -74,11 +74,11 @@ const Header = () =>{
             <MdMenu/>
             
         </div>
-        <nav className={`fixed bg-black h-[400px] top-0 left-0 mobile:w-[200px] md:w-8/12 px-10 pt-5 transition-all duration-700 ease-in-out ${showMenu ? 'right-60': 'left-[-100vw]'}`}>
-            <div className=" flex justify-end text-5xl mobile:flex mobile:justify-center font-bold hover:text-[#FFCC33] transition-all duration-300 ease-in" onClick={handleMenu}>
+        <nav className={`fixed bg-black top-0 bottom-0 px-10 pt-5   transition-all duration-700 ease-in ${showMenu ? 'left-0 w-full': 'left-full w-full'}`}>
+            <div className=" flex justify-end text-5xl mobile:text-3xl mobile:flex  font-bold hover:text-[#FFCC33] transition-all duration-300 ease-in" onClick={handleMenu}>
                 <MdClose/>
             </div>
-            <ul className="  flex flex-col  text-xl font-bold space-y-5 pt-5 ">
+            <ul className=" text-center  flex flex-col  text-xl mobile:text-base font-bold space-y-9  pt-5 ">
             <li><Link to="home" 
                 spy={true} 
                 smooth={true} 

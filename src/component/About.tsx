@@ -8,14 +8,14 @@ import original from "../assets/advantage-2.png"
 const About = () => {
   return (
     <Element name="about" className="bg-black text-white py-24 " >
-        <div className=" flex items-start gap-10  px-40  tablet:flex-col tablet:px-2">
-            <div className="w-3/4 tablet:w-[100%]">
+        <div className=" flex items-start gap-10  px-40  tablet:flex-col-reverse tablet:px-2">
+            <div className="w-3/4 tablet:w-full">
                 <img src={about} alt="" />
             </div>
            <div className="w-full ">
            <div className="flex items-center justify-center gap-x-2"  >
             <img src={leaf} />
-            <h1 className="text-5xl font-extrabold tablet:text-[22px] ">GOOD FOOD FOR YOUR ALL DAY GOOD MOOD</h1>
+            <h1 className="text-5xl font-extrabold tablet:text-3xl ">GOOD FOOD FOR YOUR ALL DAY GOOD MOOD</h1>
             
             </div>
             <p className="mt-12">Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.</p>

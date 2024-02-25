@@ -41,10 +41,10 @@ const Menu = () => {
                 <h1 className="text-5xl font-extrabold tablet:text-3xl">OUR MENU</h1>
             </div>
             <div className="px-40 tablet:px-2">
-                <div className="flex tablet:flex tablet:flex-wrap tablet:gap-5 tablet:justify-start justify-center gap-5 text-black mt-10">
+                <div className="flex tablet:flex-1 tablet:flex-wrap tablet:gap-5 justify-center gap-5 text-black mt-10">
                     {menuBar.map((item, index)=>(
                         <div className="" key={index}>
-                            <button className={`bg-[#ffcc33] py-3 tablet:px-2 px-5 font-extrabold text-lg rounded-md transition-colors duration-700 ease-in-out hover:bg-slate-600 hover:text-white ${active === index ? " bg-slate-600 transition-colors duration-300 ease-in-out text-white" : ""}`} onClick={()=>setActive(index)}>{item}</button>
+                            <button className={`bg-[#ffcc33] py-3 tablet:px-2 px-5 font-extrabold text-lg rounded-md transition-colors duration-700 ease-in-out hover:bg-slate-600 hover:text-white ${active === index ? " bg-slate-600 transition-colors duration-300 ease-in-out text-white" : ""} `} onClick={()=>setActive(index)}>{item}</button>
                         </div>
                     ))}
                 </div>

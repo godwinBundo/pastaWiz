@@ -6,11 +6,11 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube} from "react-icons/fa"
 const Contacts = () => {
   return (
     <Element name="contacts" className=" bg-black text-white py-24">
-        <div className="flex items-center justify-center gap-x-2 tablet:justify-start tablet:px-2" >
+        <div className="flex items-center justify-center gap-x-2  tablet:px-2" >
             <img src={leaf} />
             <h1 className="text-5xl font-extrabold tablet:text-3xl">CONTACTS</h1>
         </div>
-        <div className="px-40 flex justify-between mt-12 tablet:flex-col tablet:px-2">
+        <div className="px-40 flex justify-between mt-12 tablet:px-2    laptopSmall:grid laptopSmall:gap-10 lg:grid lg:grid-cols-2">
             <div className="">
                 <div className="flex text-2xl items-center gap-3 tablet:text-[18px]">
                     <MdLocationOn className="text-[#FFCC33]"/>
@@ -32,7 +32,7 @@ const Contacts = () => {
                 </div>
                 <p className="mt-2">info@restfood.com</p>
             </div>
-            <div className="flex items-center justify-between w-1/4 text-[#FFCC33] text-2xl tablet:text-[18px] tablet:mt-10 tablet:gap-2 tablet:w-[150px]">
+            <div className="flex items-center justify-between w-1/4 text-[#FFCC33] text-2xl tablet:text-[18px] tablet:mt-10 tablet:gap-2 tablet:w-[150px] laptopSmall:w-full">
                 <FaFacebookF className="hover:text-white transition-colors duration-300 ease-in"/>
                 <FaTwitter className="hover:text-white transition-colors duration-300 ease-in"/>
                 <FaInstagram className="hover:text-white transition-colors duration-300 ease-in"/>
