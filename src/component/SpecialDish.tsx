@@ -40,28 +40,24 @@ const SpecialDish = () => {
    
     
   return (
-    <Element name="menu" className=" bg-black text-white py-24 px-40 tablet:px-2 mobile:px-1 ">
+    <Element name="menu" className=" bg-black text-white py-24 px-40 tablet:px-2 mobile:px-1 flex flex-col items-center">
         <div className=" flex items-center justify-center gap-x-2 tablet:gap-x-0 " >
             <img src={leaf} />
             <h1 className="text-5xl font-extrabold tablet:text-4xl tablet:text-center mobile:text-3xl mobile:text-center  ">OUR SPECIAL DISHES</h1>
         </div>
         <p className=" text-center w-2/5 mx-auto text-lg my-5 tablet:w-full tablet:text-base ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, labore quasi temporibus consectetur suscipit sunt tenetur, veniam neque distinctio fugit in sint natus deserunt hic eaque dolores.</p>
-
-        <div className="flex items-center gap-4 flex-wrap">
-           
-                {special.map((item, index)=>(
-                <div className=" text-center " key={index}>
-                    <div className="w-[20rem]">
-                    <img src={item.image} className="w-full object-cover " />
-                    </div>
-                    <h2 className=" font-extrabold text-lg mt-5 gap-10 tablet:text-base">{item.title}</h2>
-                    <p className="  ">{item.description}</p>
-                    <h2 className=" font-extrabold text-lg text-[#FFCC33] tablet:text-base">N {item.price.toFixed(2)}</h2>
+        <div className="flex item-center tablet:flex-wrap w-full gap-4 tablet:w-[95%] tablet:gap-10 justify-center mobile:flex-col">
+            {special?.map((item, i) => (
+            <div key={i} className="w-[35rem] flex item-center flex-col gap-5 tablet:w-[20rem] mobile:w-full">
+                <img src={item?.image} alt="pastawiz" className="w-full object-cover"/>
+                <div className="flex flex-col gap-2 w-full">
+                <span className="text-lg font-semibold">{item?.title}</span>
+                <span>{item?.description}</span>
+                <span className="font-bold text-2xl text-amber-500">{item?.price}</span>
                 </div>
-            ))}
-                
             </div>
-
+            ))}
+        </div>
     </Element>
   )
 }
